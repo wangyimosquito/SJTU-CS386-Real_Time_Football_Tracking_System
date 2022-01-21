@@ -18,9 +18,9 @@ SJTU - CS386 Course Project, Football Player Tracking System
 
 ##### 运行报告测试用例视频追踪
 
-项目报告中测试所用足球比赛原视频维为`项目工程文件/vid/panorama.avi`。若想运行追踪系统，则可直接点击`可执行文件/多目标足球实时追踪系统.exe`，再点击`Play`按钮即可开始实时分析和追踪。
+项目报告中测试所用足球比赛原视频为`vid/panorama.avi`。若想运行追踪系统，则可直接点击`exe/main.exe`，再点击`Play`按钮即可开始实时分析和追踪。
 
-本系统是实时分析系统，因此并不设置暂停功能。同时后台并不存储前次分析追踪结果。但在`项目工程文件/txt/posistion data`文件中存储有测试用例20名球员的完整追踪坐标结果供参考分析。
+本系统是实时分析系统，因此并不设置暂停功能。同时后台并不存储前次分析追踪结果。但在`txt/posistion data`文件中存储有测试用例20名球员的完整追踪坐标结果供参考分析。
 
 ##### 系统退出
 
@@ -28,7 +28,7 @@ SJTU - CS386 Course Project, Football Player Tracking System
 
 ##### 导出数据
 
-对于手动选取的球员技术指标记录，在点击`Export Data`按钮后会自动生成`项目工程文件/txt/playerAction.txt`数据记录。球员跑动路程图像，球员跑动平均速度图像存储于`项目工程文件/src/Speed.png`和`项目工程文件/src/Distance.png`中，两队球员的跑动路径图像存储于`项目工程文件/img/HotMapTeam1.png`以及`项目工程文件/img/HotMapTeam2.png`中。
+对于手动选取的球员技术指标记录，在点击`Export Data`按钮后会自动生成`txt/playerAction.txt`数据记录。球员跑动路程图像，球员跑动平均速度图像存储于`项目工程文件/src/Speed.png`和`src/Distance.png`中，两队球员的跑动路径图像存储于`img/HotMapTeam1.png`以及`img/HotMapTeam2.png`中。
 
 ##### 更换视频源
 
@@ -36,11 +36,11 @@ SJTU - CS386 Course Project, Football Player Tracking System
 
 1. 再次运行旧比赛视频，在中部数据控制面板选择`Clear Above Data`按钮即可清除旧视频相关的数据记录，点击`Quit`按钮进行退出。
 
-2. 检查`项目工程文件/txt`文件下记录是否清除完毕，若没有清除，可选择手动删除。
+2. 检查`txt`文件下记录是否清除完毕，若没有清除，可选择手动删除。
 
-3. 检查`项目工程文件/img`文件下是否清除side-view图片，若没有清除，可选择手动删除。
+3. 检查`img`文件下是否清除side-view图片，若没有清除，可选择手动删除。
 
-4. 在`项目工程文件/src/main.py`中注释掉以下交互界面运行代码。
+4. 在`src/main.py`中注释掉以下交互界面运行代码。
 
    ```python
    import playertrack
@@ -52,7 +52,7 @@ SJTU - CS386 Course Project, Football Player Tracking System
    sys.exit(app.exec_())
    ```
 
-5. 在`项目工程文件/vid`中放入希望运行的源文件，命名为`panorama.avi`。
+5. 在`vid`中放入希望运行的源文件，命名为`panorama.avi`。
 
 6. 在终端中运行main.py文件，此时脚本会依次执行背景提取，赛场四角手动标定，球员颜色手动标定，以及20名球员位置的手动框选。
 
