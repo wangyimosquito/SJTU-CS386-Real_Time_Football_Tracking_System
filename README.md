@@ -2,6 +2,8 @@
 SJTU - CS386 Course Project, Football Player Tracking System
 
 # Readme
+### GUI example
+![avatar](/img/GUI.png)
 
 ### Install
 
