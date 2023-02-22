@@ -18,17 +18,17 @@ SJTU - CS386 Course Project, Football Player Tracking System
 
 ### Usage
 
-##### 运行报告测试用例视频追踪
+##### Run the testcase
 
-项目报告中测试所用足球比赛原视频为`vid/panorama.avi`。若想运行追踪系统，则可直接点击`exe/main.exe`，再点击`Play`按钮即可开始实时分析和追踪。
+The testcase in this repository is `vid/panorama.avi`。To run the tracking system, click `exe/main.exe`，then click `Play` button for real-time tracking and analysis.
 
-本系统是实时分析系统，因此并不设置暂停功能。同时后台并不存储前次分析追踪结果。但在`txt/posistion data`文件中存储有测试用例20名球员的完整追踪坐标结果供参考分析。
+This system has no pause function for it is designed to be a real-time tracking system. The backend won't store previous analysis results。But in the `txt/posistion data` preserves the 20 players' position records in the testcase video.
 
-##### 系统退出
+##### Quit the System
 
-退出实时分析系统时需要点击`Quit`按钮进行正确退出，若直接点击右上角关闭窗口，前次运行的速度，跑动路程，跑动路径等图像不会清除更新，但若想保留以上文件，可以点击右上角关闭窗口。
+Click the `Quit` button for quiting. Close the window directly will cause the next running of this system to preserve the last running speed, running distance and running map records. But if you meant to preserve these, click the close button at up right.
 
-##### 导出数据
+##### Export the Data
 
 对于手动选取的球员技术指标记录，在点击`Export Data`按钮后会自动生成`txt/playerAction.txt`数据记录。球员跑动路程图像，球员跑动平均速度图像存储于`项目工程文件/src/Speed.png`和`src/Distance.png`中，两队球员的跑动路径图像存储于`img/HotMapTeam1.png`以及`img/HotMapTeam2.png`中。
 
